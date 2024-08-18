@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.main{
+    display: flex;
+    margin-left: 20px;
+    width: 100px;
+    
+    background-color: green;
+}
+.main > div {
+margin: 10px;
+
+}
+.main-bottom{
+    display: flex;
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column ;
+}
+    </style>
+</head>
+<body>
+
+    <div>Stop Watch</div>
+    <br><br>
+<div class="main">
+
+<div id="min">0</div>
+
+<div id="sec">0</div>
+
+<div id="mili">0</div>
+
+
+</div>
+<div class="main-bottom">
+    <div  onclick="start()"><button id="sss">Stsrt</button> </div>
+    <div onclick="stop()"><button>Stop</button></div>
+    <div onclick="rest()"><button>Rest</button></div>
+
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
